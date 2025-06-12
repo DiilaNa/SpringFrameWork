@@ -1,5 +1,6 @@
 package lk.ijse.project;
 
+import lk.ijse.project.bean.MyConnection;
 import lk.ijse.project.bean.SpringBean;
 import lk.ijse.project.bean.TestBean01;
 import lk.ijse.project.bean.TestBean02;
@@ -22,17 +23,24 @@ public class AppInitializer {
         System.out.println(bean01);
 
 
-        /*class name*/
-        SpringBean springBean = context.getBean(SpringBean.class);
-        System.out.println(springBean);
+//        /*class name*/
+//        SpringBean springBean = context.getBean(SpringBean.class);
+//        System.out.println(springBean);
+//
+//        /*ID*/
+//        TestBean01 testBean01 = context.getBean("testBean01",TestBean01.class);
+//        System.out.println(testBean01);
+//
+//        /*Bean Id and Class Name*/
+//        TestBean02 testBean2 = context.getBean("testBean01",TestBean02.class);
+//        System.out.println(testBean2);
 
-        /*ID*/
-        TestBean01 testBean01 = context.getBean("testBean01",TestBean01.class);
-        System.out.println(testBean01);
-
-        /*Bean Id and Class Name*/
-        TestBean02 testBean2 = context.getBean("testBean01",TestBean02.class);
-        System.out.println(testBean2);
+        /*bean Id -> bean method name*/
+        MyConnection connection = (MyConnection) context.getBean("getConnection");
+        System.out.println(connection);
+        /*beanId + class name*/
+        MyConnection connection2 = (MyConnection) context.getBean("getConnection",MyConnection.class);
+        System.out.println(connection2);
 
 
 
