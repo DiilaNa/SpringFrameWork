@@ -21,6 +21,21 @@ public class AppInitializer {
         TestBean01 bean01 = context.getBean(TestBean01.class);
         System.out.println(bean01);
 
+
+        /*class name*/
+        SpringBean springBean = context.getBean(SpringBean.class);
+        System.out.println(springBean);
+
+        /*ID*/
+        TestBean01 testBean01 = context.getBean("testBean01",TestBean01.class);
+        System.out.println(testBean01);
+
+        /*Bean Id and Class Name*/
+        TestBean02 testBean2 = context.getBean("testBean01",TestBean02.class);
+        System.out.println(testBean2);
+
+
+
        /*----------Method 01 --------------------------
 
        Runtime.getRuntime().addShutdownHook(new Thread() {
