@@ -20,8 +20,19 @@ public class AppInitializer {
 
         TestBean01 bean01 = context.getBean(TestBean01.class);
         System.out.println(bean01);
+
+       /*----------Method 01 --------------------------
+
+       Runtime.getRuntime().addShutdownHook(new Thread() {
+            @Override
+            public void run() {
+                context.close();
+            }
+        });*/
+        /*-------Method 02------------------------*/
+        context.registerShutdownHook();
+
         TestBean02 bean02 = context.getBean(TestBean02.class);
         System.out.println(bean02);
-        context.close();
     }
 }
