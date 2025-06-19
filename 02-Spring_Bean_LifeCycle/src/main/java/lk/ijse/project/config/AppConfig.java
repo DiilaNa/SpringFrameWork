@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Scope;
 @ComponentScan(basePackages = "lk.ijse.project.bean")
 public class AppConfig {
     @Bean
-    @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+  /*  @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)*/
     public MyConnection myConnection() {
         return new MyConnection();
     }

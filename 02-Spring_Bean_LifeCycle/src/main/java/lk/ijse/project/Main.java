@@ -15,8 +15,11 @@ public class Main {
         System.out.println(testBean1);
         TestBean1 testBean2 = context.getBean(TestBean1.class);
         System.out.println(testBean2);*/
-        MyConnection myConnection = context.getBean(MyConnection.class);
-        System.out.println(myConnection);
+        MyConnection myConnection1 = context.getBean(MyConnection.class);
+        System.out.println(myConnection1);
+        System.out.println("---------------------------------------------");
+        MyConnection myConnection2 = context.getBean(MyConnection.class);
+        System.out.println(myConnection2);
         context.registerShutdownHook();
     }
 }
