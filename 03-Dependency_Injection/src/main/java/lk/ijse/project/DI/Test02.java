@@ -8,10 +8,15 @@ public class Test02 {
     /*property injection*/
     @Autowired
     DI di;
-    /*Constructor through injection-no need for auto wired annotation for constructor*/
+ /*   *//*Constructor through injection-no need for auto wired annotation for constructor*//*
     public Test02(DI di) {
        this.di = di;
+    }*/
+    @Autowired
+    public void setDi(DI di) {
+        this.di = di;
     }
+
     public  void test() {
         di.sayHello();
     }

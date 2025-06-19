@@ -15,6 +15,7 @@ public class AppInitializer {
 //        boy.chatWithGirl();
         Test02 test02 = context.getBean(Test02.class);
         test02.test();
+
         context.registerShutdownHook();
     }
 }
