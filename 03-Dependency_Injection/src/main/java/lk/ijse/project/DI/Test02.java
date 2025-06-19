@@ -8,9 +8,9 @@ public class Test02 {
     /*property injection*/
     @Autowired
     DI di;
-
-    public Test02() {
-        System.out.println("Test02 constructor called");
+    /*Constructor through injection-no need for auto wired annotation for constructor*/
+    public Test02(DI di) {
+       this.di = di;
     }
     public  void test() {
         di.sayHello();
