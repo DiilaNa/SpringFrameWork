@@ -12,6 +12,7 @@
         <module name="06-Runtime_Values" />
         <module name="03-Dependency_Injection" />
         <module name="05-Configuration" />
+        <module name="08-SpringMVC" />
         <module name="01-Spring_Core" />
         <module name="Test01" />
       </profile>
