@@ -21,6 +21,6 @@ public class AppInitializer {
 * ProtoTYpe beans thinne context ek athule nemei heap eke/contect eken eliye enisai destroy method ek run wen natte
 *
 * if we invoke bean inside a bean its interbean dependeny
-*
+* Component annotaion ekt priority ek wedi bean ekt wada , api hadana class walata tma component annotati     on en danne
 *
 * */

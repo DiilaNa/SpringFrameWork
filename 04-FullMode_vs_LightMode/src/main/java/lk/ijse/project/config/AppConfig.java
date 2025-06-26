@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration/*context ekata bean wetenna ooni kohmd kiyl kiynne*/
 @ComponentScan(basePackages = "lk.ijse.project.bean")
 public class AppConfig {
-    @Bean
+  /*  @Bean
     public SpringBeanOne springBeanOne() {
         SpringBeanTwo springBeanOne1 = springBeanTwo();
         SpringBeanTwo springBeanTwo2 = springBeanTwo();
@@ -20,7 +20,7 @@ public class AppConfig {
     @Bean
     public SpringBeanTwo springBeanTwo() {
         return new SpringBeanTwo();
-    }
+    }*/
 }
 
 
