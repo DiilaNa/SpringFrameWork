@@ -11,6 +11,7 @@
         <module name="04-FullMode_vs_LightMode" />
         <module name="01-Spring_Core" />
         <module name="03-Dependency_Injection" />
+        <module name="Test01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
