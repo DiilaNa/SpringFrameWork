@@ -13,8 +13,9 @@ public class MyConnection implements DisposableBean, BeanNameAware , BeanFactory
     }
 
     /*There is no method to find the state of populate properties*/
-    /*bean name aware*/
 
+
+    /*bean name aware*/
     @Override
     public void setBeanName(String name) {
         System.out.println("setBeanName is called");
@@ -34,7 +35,7 @@ public class MyConnection implements DisposableBean, BeanNameAware , BeanFactory
     public void afterPropertiesSet() throws Exception {
         System.out.println("afterPropertiesSet is called/Bean is ready to use");
     }
-
+    /*Disposable bean aware*/
     @Override
     public void destroy() throws Exception {
         System.out.println("MyConnection is Destroyed");
