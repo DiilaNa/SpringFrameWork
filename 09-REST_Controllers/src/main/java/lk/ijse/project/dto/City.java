@@ -7,9 +7,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class UserDto {
-    private String userID;
-    private String userName;
-
-    private String address;
+public class City {
+    private String name;
+    private String code;
 }

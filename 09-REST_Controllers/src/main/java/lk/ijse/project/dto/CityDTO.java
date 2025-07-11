@@ -7,9 +7,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class UserDto {
+public class CityDTO {
     private String userID;
     private String userName;
-
     private String address;
+    private City City;
+
 }
