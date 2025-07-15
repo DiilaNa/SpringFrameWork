@@ -16,10 +16,15 @@
         <option value="$PROJECT_DIR$/SpringMVC/pom.xml" />
         <option value="$PROJECT_DIR$/08-SpringMVC/pom.xml" />
         <option value="$PROJECT_DIR$/09-REST_Controllers/pom.xml" />
+        <option value="$PROJECT_DIR$/10-Front_End/pom.xml" />
+        <option value="$PROJECT_DIR$/09-REST_Controllers/11-Back_end/pom.xml" />
+        <option value="$PROJECT_DIR$/11-Back_End/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/10-Front_End/pom.xml" />
+        <option value="$PROJECT_DIR$/11-Back_end/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMVC/pom.xml" />
       </set>
     </option>

@@ -21,6 +21,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="03-Spring_Bean_Life_Cycle" target="1.8" />
+      <module name="10-Front_End" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
